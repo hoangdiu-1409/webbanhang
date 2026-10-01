@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kem Chống Nắng Dermablock SPF50+ PA++++ 35ml</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        border-top: 40px solid #ff4d6d;
+        border-bottom: 40px solid #ff4d6d;
+      }
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .product-img {
+        flex: 1;
+      }
+      .product-img img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      .product-info {
+        flex: 2;
+      }
+      .title {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      .rating {
+        color: #f39c12;
+        margin-bottom: 10px;
+      }
+      .price {
+        font-size: 24px;
+        color: #e74c3c;
+        margin-bottom: 5px;
+      }
+      .old-price {
+        text-decoration: line-through;
+        color: #888;
+        margin-bottom: 10px;
+      }
+      .flash-sale {
+        background: #ff4757;
+        color: #fff;
+        padding: 8px;
+        border-radius: 4px;
+        margin-bottom: 15px;
+      }
+
+      .options {
+        margin-bottom: 15px;
+      }
+      .options label {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      .size-options {
+        display: flex;
+        gap: 6px;
+        margin: 8px 0;
+      }
+      .size-options input[type="radio"] {
+        display: none;
+      }
+      .size-options label {
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        cursor: pointer;
+        background: #fff;
+        transition: all 0.3s ease;
+      }
+      .size-options input[type="radio"]:checked + label {
+        border-color: #ff4d6d;
+        background: #ffe6f0;
+        color: #d63384;
+        font-weight: bold;
+      }
+
+      #quantity {
+        width: 50px;
+        padding: 4px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      #price {
+        font-size: 20px;
+        color: #e74c3c;
+        margin-top: 8px;
+      }
+      #stock {
+        margin-left: 8px;
+        color: #27ae60;
+        font-weight: bold;
+      }
+      .buttons button {
+        padding: 6px 12px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .add-cart {
+        background: #3498db;
+        color: #fff;
+      }
+      .buy-now {
+        background: #27ae60;
+        color: #fff;
+      }
+
+      .description,
+      .specs,
+      .usage {
+        max-width: 1000px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        line-height: 1.6;
+      }
+      .description h2,
+      .specs h2,
+      .usage h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #d63384;
+      }
+
+      .back-home {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        font-size: 24px;
+        text-decoration: none;
+        color: #333;
+        background: #f2f2f2;
+        padding: 5px 10px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition:
+          background 0.3s ease,
+          color 0.3s ease;
+      }
+      .back-home:hover {
+        background: #3498db;
+        color: #fff;
+      }
+      .cart-link {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        text-decoration: none;
+        background: #ff4d6d;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="product-img">
+        <img
+          src="/img/dermablock.webp"
+          alt="Kem Chống Nắng Dermablock SPF50+ PA++++ 35ml"
+        />
+      </div>
+      <div class="product-info">
+        <div class="title">Kem Chống Nắng Dermablock SPF50+ PA++++ 35ml</div>
+        <div class="rating">⭐ 4.8 (1256 đánh giá) Đã bán 6k+</div>
+        <!-- Chọn size và số lượng -->
+        <div class="options">
+          <label>Phân loại</label>
+          <div class="size-options">
+            <input
+              type="radio"
+              id="size-tone-up"
+              name="size"
+              value="Tone up"
+              data-price="190900"
+              data-stock="20"
+              data-image="img/der1.webp"
+              checked
+            />
+            <label for="size-tone-up">Tone up</label>
+
+            <input
+              type="radio"
+              id="size-daily"
+              name="size"
+              value="Daily"
+              data-price="190900"
+              data-stock="15"
+              data-image="img/der2.webp"
+            />
+            <label for="size-daily">Daily</label>
+
+            <input
+              type="radio"
+              id="size-bb"
+              name="size"
+              value="BB"
+              data-price="190900"
+              data-stock="10"
+              data-image="img/der3.webp"
+            />
+            <label for="size-bb">BB</label>
+
+            <input
+              type="radio"
+              id="size-aqua"
+              name="size"
+              value="Aqua"
+              data-price="190900"
+              data-stock="5"
+              data-image="img/der4.webp"
+            />
+            <label for="size-aqua">Aqua</label>
+
+            <input
+              type="radio"
+              id="size-mild-stick"
+              name="size"
+              value="Mild Stick"
+              data-price="170150"
+              data-stock="5"
+              data-image="img/der5.webp"
+            />
+            <label for="size-mild-stick">Mild Stick</label>
+          </div>
+
+          <div class="quantity-box">
+            <span>Số lượng:</span>
+            <button onclick="changeQuantity(-1)">−</button>
+            <span id="quantity">1</span>
+            <button onclick="changeQuantity(1)">+</button>
+            <span id="stock"></span>
+          </div>
+        </div>
+        <div class="price" id="price">190.900₫</div>
+        <button class="add-cart">Thêm vào giỏ hàng</button>
+        <button class="buy-now">Mua ngay</button>
+        <div class="flash-sale">
+          FLASH SALE - Kết thúc sau <span id="countdown"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="description">
+      <h2>Mô tả sản phẩm</h2>
+      <p>
+        <img
+          src="img/der1.webp"
+          alt="Tone up"
+          style="width: 100%; max-width: 400px; margin-bottom: 10px"
+        /><br />
+        Dermablock Tone up Sun Cream 35ml:Kem chống nắng che khuyết điểm 2 in 1
+        Dermablock BB Sun Cream SPF 5-+ PA++++ 35ml<br />
+        + Công dụng:<br />
+        - Nâng tone trắng hồng và kiềm dầu cho da<br />
+        - Hỗ trợ bảo vệ da khỏi tia UV (tác nhân gây cháy nắng, sạm nám)<br />
+        - Hỗ trợ làm mịn và đều màu da, làm mờ vết thâm<br />
+        - Hỗ trợ ngăn ngừa các vấn đề lão hóa do tia cực tím và gốc tự do<br />
+      </p>
+
+      <p>
+        <img
+          src="img/der2.webp"
+          alt="Daily"
+          style="width: 100%; max-width: 400px; margin-bottom: 10px"
+        /><br />
+        Dermablock Daily Sun Cream 35ml:Kem chống nắng phổ rộng mỏng nhẹ vô hình
+        Dermablock Daily Sun Cream SPF 50+ PA++++ 35ml<br />
+        + Công dụng:<br />
+        - Hỗ trợ chống nắng, chống oxy hoá<br />
+        - Hỗ trợ dưỡng ẩm và cải thiện nếp nhăn của làn da<br />
+        - Hỗ trợ bảo vệ da khỏi tia UV<br />
+        - Hỗ trợ ngăn ngừa các vấn đề lão hóa do tia cực tím và gốc tự do<br />
+      </p>
+      <p>
+        <img
+          src="img/der2.webp"
+          alt="Daily"
+          style="width: 100%; max-width: 400px; margin-bottom: 10px"
+        /><br />
+        Dermablock Daily Sun Cream 35ml:Kem chống nắng phổ rộng mỏng nhẹ vô hình
+        Dermablock Daily Sun Cream SPF 50+ PA++++ 35ml<br />
+        + Công dụng:<br />
+        - Hỗ trợ chống nắng, chống oxy hoá<br />
+        - Hỗ trợ dưỡng ẩm và cải thiện nếp nhăn của làn da<br />
+        - Hỗ trợ bảo vệ da khỏi tia UV<br />
+        - Hỗ trợ ngăn ngừa các vấn đề lão hóa do tia cực tím và gốc tự do<br />
+      </p>
+
+      <p>
+        <img
+          src="img/der3.webp"
+          alt="BB"
+          style="width: 100%; max-width: 400px; margin-bottom: 10px"
+        /><br />
+        Dermablock BB Sun Cream 35ml:Kem chống nắng che khuyết điểm 2 in 1
+        Dermablock BB Sun Cream SPF 50+ PA++++ 35ml + Công dụng:<br />
+        + Công dụng:<br />
+        - Hỗ trợ che phủ khuyết điểm (thâm nám, nếp nhăn, lỗ chân lông…) trên
+        da<br />
+        - Hỗ trợ làm mờ các vết thâm để giúp làn da đều màu và tự nhiên hơn<br />
+        - Cải thiện độ ẩm, tránh tình trạng loang mốc, loang lổ, sần sùi trên
+        da<br />
+        - Hỗ trợ bảo vệ da khỏi tia UV<br />
+        - Hỗ trợ ngăn ngừa các vấn đề lão hóa<br />
+      </p>
+
+      <p>
+        <img
+          src="img/der4.webp"
+          alt="Aqua"
+          style="width: 100%; max-width: 400px; margin-bottom: 10px"
+        /><br />
+        Dermablock Aqua Sun Cream 35ml:Kem chống nắng cấp ẩm và làm dịu cho da
+        xâm lấn, treatment Dermablock Aqua Sun Cream SPF 50+ PA++++ 35ml<br />
+        + Công dụng:<br />
+        - Hỗ trợ dưỡng ẩm da, làm dịu vùng da mẩn đỏ da kích ứng để giúp giảm
+        thiểu độ mẫn cảm của làn da<br />
+        - Hỗ trợ tạo lớp màng giữ ẩm, hạn chế tình trạng mất nước cho da<br />
+        - Hỗ trợ bảo vệ da khỏi tia UV<br />
+        - Hỗ trợ ngăn ngừa các vấn đề lão hóa do tia cực tím và gốc tự do<br />
+      </p>
+
+      <p>
+        <img
+          src="img/der5.webp"
+          alt="Mild Sun"
+          style="width: 100%; max-width: 400px; margin-bottom: 10px"
+        /><br />
+        Dermablock Mild Sun Cream 35ml:Kem chống nắng phổ rộng mỏng nhẹ vô hình
+        Dermablock Daily Sun Cream SPF 50+ PA++++ 35ml<br />
+        + Công dụng:<br />
+        - Chống nắng và hỗ trợ bảo vệ da khỏi tia UVA và UVB<br />
+        - Hỗ trợ dưỡng ẩm giúp da ẩm mịn<br />
+        - Hỗ trợ làm mát và làm dịu da<br />
+        - Hỗ trợ chống oxy hóa và bảo vệ làn da khỏi những tác nhân ô nhiễm môi
+        trường<br />
+      </p>
+    </div>
+    <div class="specs">
+      <h2>Chi tiết sản phẩm</h2>
+      <ul>
+        <li>Thương hiệu: Dermablock</li>
+        <li>
+          Thành phần: Dẫn xuất Vitamin C, B3, Collagen, Amino Acid, Hyaluronic
+          Acid
+        </li>
+        <li>Công thức: Dạng kem</li>
+        <li>Loại da: Mọi loại da</li>
+        <li>Thể tích: 35ml</li>
+        <li>Xuất xứ: Hàn Quốc</li>
+        <li>Hạn sử dụng: 3 năm kể từ NSX</li>
+      </ul>
+    </div>
+    <div class="usage">
+      <h2>Hướng dẫn sử dụng</h2>
+      <p>
+        - Dùng ở bước cuối cùng quy trình dưỡng da.<br />
+        - Thoa trực tiếp lên vùng da cần bảo vệ.<br />
+        - Có thể thoa lại sau mỗi 4 giờ khi tiếp xúc với nước như bơi lội.
+      </p>
+    </div>
+    <a href="index.html" class="back-home">←</a>
+    <a href="giohang.html" class="cart-link">🛒 Giỏ hàng</a>
+
+    <script>
+      // ===== Hằng số thông tin sản phẩm =====
+      const PRODUCT_NAME = "Kem Chống Nắng Dermablock SPF50+ PA++++ 35ml";
+      const PRODUCT_CATEGORY = "Kem chống nắng";
+
+      // ===== Đồng hồ Flash Sale =====
+      const countdownElement = document.getElementById("countdown");
+      let timeLeft = 3600;
+
+      function updateCountdown() {
+        const hours = Math.floor(timeLeft / 3600);
+        const minutes = Math.floor((timeLeft % 3600) / 60);
+        const seconds = timeLeft % 60;
+        countdownElement.textContent = `${hours}h ${minutes}m ${seconds}s`;
+        if (timeLeft > 0) timeLeft--;
+      }
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+
+      // ===== Phần tử DOM =====
+      const sizeRadios = document.querySelectorAll('input[name="size"]');
+      const priceElement = document.getElementById("price");
+      const stockElement = document.getElementById("stock");
+      const quantityElement = document.getElementById("quantity");
+
+      let quantity = 1;
+
+      // Lấy thông tin loại đang được chọn
+      function getSelectedVariant() {
+        const radio = document.querySelector('input[name="size"]:checked');
+        return {
+          variant: radio.value,
+          price: parseInt(radio.dataset.price),
+          stock: parseInt(radio.dataset.stock),
+          image: radio.dataset.image,
+        };
+      }
+
+      // Tăng/giảm số lượng, giới hạn trong khoảng [1, tồn kho]
+      function changeQuantity(amount) {
+        const { stock } = getSelectedVariant();
+        quantity = Math.min(Math.max(quantity + amount, 1), stock);
+        quantityElement.textContent = quantity;
+      }
+
+      // Cập nhật giá + tồn kho khi đổi loại
+      function updateInfo() {
+        const v = getSelectedVariant();
+        priceElement.textContent = v.price.toLocaleString("vi-VN") + "₫";
+        stockElement.textContent = "Còn " + v.stock;
+        quantity = 1; // đổi loại thì đặt lại số lượng
+        quantityElement.textContent = quantity;
+      }
+
+      sizeRadios.forEach((radio) =>
+        radio.addEventListener("change", updateInfo),
+      );
+
+      // Tạo đối tượng sản phẩm từ loại đang chọn
+      function buildCartItem() {
+        const v = getSelectedVariant();
+        return {
+          id: PRODUCT_NAME + " - " + v.variant, // khóa duy nhất cho từng loại
+          name: PRODUCT_NAME,
+          variant: v.variant,
+          image: v.image,
+          price: v.price,
+          category: PRODUCT_CATEGORY,
+          stock: v.stock,
+          qty: quantity,
+        };
+      }
+
+      // ===== THÊM VÀO GIỎ HÀNG =====
+      document
+        .querySelector(".add-cart")
+        .addEventListener("click", function () {
+          const item = buildCartItem();
+          const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+          const existing = cart.find((p) => p.id === item.id);
+          const totalQty = (existing ? existing.qty : 0) + item.qty;
+
+          // Kiểm tra tồn kho
+          if (totalQty > item.stock) {
+            alert(
+              `⚠️ Loại "${item.variant}" chỉ còn ${item.stock} sản phẩm (trong giỏ đã có ${existing ? existing.qty : 0}).`,
+            );
+            return;
+          }
+
+          if (existing) {
+            existing.qty = totalQty;
+          } else {
+            cart.push(item);
+          }
+
+          localStorage.setItem("cart", JSON.stringify(cart));
+          alert(
+            `🛒 Đã thêm ${item.qty} sản phẩm loại "${item.variant}" vào giỏ hàng!`,
+          );
+        });
+
+      // ===== MUA NGAY =====
+      document.querySelector(".buy-now").addEventListener("click", function () {
+        localStorage.setItem("checkoutCart", JSON.stringify([buildCartItem()]));
+        window.location.href = "thanhtoan.html";
+      });
+
+      // Khởi tạo ban đầu
+      updateInfo();
+    </script>
+  </body>
+</html>

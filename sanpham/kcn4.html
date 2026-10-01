@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Kem Chống Nắng Beplain Sunmunse Nâng Tone Vật Lý Thuần Chay, Hiệu Chỉnh Da
+      SPF 50+ Pa++++ 50ml
+    </title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        border-top: 40px solid #ff4d6d;
+        border-bottom: 40px solid #ff4d6d;
+      }
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .product-img {
+        flex: 1;
+      }
+      .product-img img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      .product-info {
+        flex: 2;
+      }
+      .title {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      .rating {
+        color: #f39c12;
+        margin-bottom: 10px;
+      }
+      .price {
+        font-size: 24px;
+        color: #e74c3c;
+        margin-bottom: 5px;
+      }
+      .old-price {
+        text-decoration: line-through;
+        color: #888;
+        margin-bottom: 10px;
+      }
+      .flash-sale {
+        background: #ff4757;
+        color: #fff;
+        padding: 8px;
+        border-radius: 4px;
+        margin-bottom: 15px;
+      }
+
+      .options {
+        margin-bottom: 15px;
+      }
+      .options label {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      .size-options {
+        display: flex;
+        gap: 6px;
+        margin: 8px 0;
+      }
+      .size-options input[type="radio"] {
+        display: none;
+      }
+      .size-options label {
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        cursor: pointer;
+        background: #fff;
+        transition: all 0.3s ease;
+      }
+      .size-options input[type="radio"]:checked + label {
+        border-color: #ff4d6d;
+        background: #ffe6f0;
+        color: #d63384;
+        font-weight: bold;
+      }
+
+      #quantity {
+        width: 50px;
+        padding: 4px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      #price {
+        font-size: 20px;
+        color: #e74c3c;
+        margin-top: 8px;
+      }
+      #stock {
+        margin-left: 8px;
+        color: #27ae60;
+        font-weight: bold;
+      }
+      .buttons button {
+        padding: 6px 12px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .add-cart {
+        background: #3498db;
+        color: #fff;
+      }
+      .buy-now {
+        background: #27ae60;
+        color: #fff;
+      }
+
+      .description,
+      .specs,
+      .usage {
+        max-width: 1000px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        line-height: 1.6;
+      }
+      .description h2,
+      .specs h2,
+      .usage h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #d63384;
+      }
+
+      .back-home {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        font-size: 24px;
+        text-decoration: none;
+        color: #333;
+        background: #f2f2f2;
+        padding: 5px 10px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition:
+          background 0.3s ease,
+          color 0.3s ease;
+      }
+      .back-home:hover {
+        background: #3498db;
+        color: #fff;
+      }
+      .cart-link {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        text-decoration: none;
+        background: #ff4d6d;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="product-img">
+        <img
+          src="/img/beplain.webp"
+          alt="Kem Chống Nắng Beplain Sunmunse Nâng Tone Vật Lý Thuần Chay, Hiệu Chỉnh Da SP 50+ Pa++++ 50ml"
+        />
+      </div>
+      <div class="product-info">
+        <div class="title">
+          Kem Chống Nắng Beplain Sunmunse Nâng Tone Vật Lý Thuần Chay, Hiệu
+          Chỉnh Da SP 50+ Pa++++ 50ml
+        </div>
+        <div class="rating">⭐ 4.8 (1256 đánh giá) Đã bán 6k+</div>
+        <!-- Chọn size và số lượng -->
+        <div class="options">
+          <label>Phân loại</label>
+          <div class="size-options">
+            <input
+              type="radio"
+              id="size-hong"
+              name="size"
+              value="Hồng"
+              data-price="364500"
+              data-stock="20"
+              data-image="/img/hồng.webp"
+              checked
+            />
+            <label for="size-hong">Hồng</label>
+
+            <input
+              type="radio"
+              id="size-tim-nhat"
+              name="size"
+              value="Tím nhạt"
+              data-price="305000"
+              data-stock="15"
+              data-image="img/timnhat.webp"
+            />
+            <label for="size-tim-nhat">Tím nhạt</label>
+
+            <input
+              type="radio"
+              id="size-tim-dam"
+              name="size"
+              value="Tím đậm"
+              data-price="316759"
+              data-stock="10"
+              data-image="img/timdam.webp"
+            />
+            <label for="size-tim-dam">Tím đậm</label>
+
+            <input
+              type="radio"
+              id="size-xanh-la"
+              name="size"
+              value="Xanh lá"
+              data-price="297000"
+              data-stock="5"
+              data-image="img/xanhla.webp"
+            />
+            <label for="size-xanh-la">Xanh lá</label>
+          </div>
+
+          <label for="quantity">Số lượng:</label>
+          <input type="number" id="quantity" value="1" min="1" />
+          <span id="stock"></span>
+        </div>
+        <div class="price" id="price">364.500₫</div>
+
+        <div class="flash-sale">
+          FLASH SALE - Kết thúc sau <span id="countdown"></span>
+        </div>
+        <div class="buttons">
+          <button class="add-cart">Thêm Vào Giỏ Hàng</button>
+          <button class="buy-now">Mua Ngay</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="description">
+      <h2>Mô tả sản phẩm</h2>
+      <p>
+        <img
+          src="img/hồng.webp"
+          alt="Hồng"
+          style="width: 100%; max-width: 400px; margin-bottom: 10px"
+        /><br />
+        Beplain Sunmunse Nâng Tone Vật Lý Thuần Chay, Hiệu Chỉnh Da SPF 50+
+        Pa++++ 50ml<br />
+        + Công dụng:<br />
+        - Nâng tone trắng hồng và kiềm dầu cho da<br />
+        - Hỗ trợ bảo vệ da khỏi tia UV (tác nhân gây cháy nắng, sạm nám)<br />
+        - Hỗ trợ làm mịn và đều màu da, làm mờ vết thâm<br />
+        - Hỗ trợ ngăn ngừa các vấn đề lão hóa do tia cực tím và gốc tự do<br />
+      </p>
+
+      <p>
+        <img
+          src="img/timnhat.webp"
+          alt="Tím nhạt"
+          style="width: 100%; max-width: 400px; margin-bottom: 10px"
+        /><br />
+        Dermablock Daily Sun Cream 35ml:Kem chống nắng phổ rộng mỏng nhẹ vô hình
+        Dermablock Daily Sun Cream SPF 50+ PA++++ 35ml<br />
+        + Công dụng:<br />
+        - Hỗ trợ chống nắng, chống oxy hoá<br />
+        - Hỗ trợ dưỡng ẩm và cải thiện nếp nhăn của làn da<br />
+        - Hỗ trợ bảo vệ da khỏi tia UV<br />
+        - Hỗ trợ ngăn ngừa các vấn đề lão hóa do tia cực tím và gốc tự do<br />
+      </p>
+      <p>
+        <img
+          src="img/timdam.webp"
+          alt="Tím đậm"
+          style="width: 100%; max-width: 400px; margin-bottom: 10px"
+        /><br />
+        Dermablock Daily Sun Cream 35ml:Kem chống nắng phổ rộng mỏng nhẹ vô hình
+        Dermablock Daily Sun Cream SPF 50+ PA++++ 35ml<br />
+        + Công dụng:<br />
+        - Hỗ trợ chống nắng, chống oxy hoá<br />
+        - Hỗ trợ dưỡng ẩm và cải thiện nếp nhăn của làn da<br />
+        - Hỗ trợ bảo vệ da khỏi tia UV<br />
+        - Hỗ trợ ngăn ngừa các vấn đề lão hóa do tia cực tím và gốc tự do<br />
+      </p>
+
+      <p>
+        <img
+          src="img/xanhla.webp"
+          alt="Xanh lá"
+          style="width: 100%; max-width: 400px; margin-bottom: 10px"
+        /><br />
+        Dermablock BB Sun Cream 35ml:Kem chống nắng che khuyết điểm 2 in 1
+        Dermablock BB Sun Cream SPF 50+ PA++++ 35ml + Công dụng:<br />
+        + Công dụng:<br />
+        - Hỗ trợ che phủ khuyết điểm (thâm nám, nếp nhăn, lỗ chân lông…) trên
+        da<br />
+        - Hỗ trợ làm mờ các vết thâm để giúp làn da đều màu và tự nhiên hơn<br />
+        - Cải thiện độ ẩm, tránh tình trạng loang mốc, loang lổ, sần sùi trên
+        da<br />
+        - Hỗ trợ bảo vệ da khỏi tia UV<br />
+        - Hỗ trợ ngăn ngừa các vấn đề lão hóa<br />
+      </p>
+    </div>
+    <div class="specs">
+      <h2>Chi tiết sản phẩm</h2>
+      <ul>
+        <li>Thương hiệu: Dermablock</li>
+        <li>
+          Thành phần: Dẫn xuất Vitamin C, B3, Collagen, Amino Acid, Hyaluronic
+          Acid
+        </li>
+        <li>Công thức: Dạng kem</li>
+        <li>Loại da: Mọi loại da</li>
+        <li>Thể tích: 35ml</li>
+        <li>Xuất xứ: Hàn Quốc</li>
+        <li>Hạn sử dụng: 3 năm kể từ NSX</li>
+      </ul>
+    </div>
+    <div class="usage">
+      <h2>Hướng dẫn sử dụng</h2>
+      <p>
+        - Dùng ở bước cuối cùng quy trình dưỡng da.<br />
+        - Thoa trực tiếp lên vùng da cần bảo vệ.<br />
+        - Có thể thoa lại sau mỗi 4 giờ khi tiếp xúc với nước như bơi lội.
+      </p>
+    </div>
+    <a href="index.html" class="back-home">←</a>
+    <a href="giohang.html" class="cart-link">🛒 Giỏ hàng</a>
+
+    <script>
+      // ===== Thông tin chung của sản phẩm =====
+      const PRODUCT_NAME =
+        "Kem Chống Nắng Beplain Sunmunse Nâng Tone Vật Lý Thuần Chay SPF 50+ PA++++ 50ml";
+      const PRODUCT_CATEGORY = "Kem chống nắng";
+
+      // ===== Phần tử DOM =====
+      const sizeRadios = document.querySelectorAll('input[name="size"]');
+      const priceElement = document.getElementById("price");
+      const stockElement = document.getElementById("stock");
+      const quantityInput = document.getElementById("quantity");
+
+      // Lấy thông tin loại đang được chọn
+      function getSelectedVariant() {
+        const radio = document.querySelector('input[name="size"]:checked');
+        return {
+          variant: radio.value,
+          price: parseInt(radio.dataset.price),
+          stock: parseInt(radio.dataset.stock),
+          image: radio.dataset.image,
+        };
+      }
+
+      // Đọc số lượng và ép về khoảng [1, tồn kho]
+      function getQuantity() {
+        const { stock } = getSelectedVariant();
+        let q = parseInt(quantityInput.value);
+        if (isNaN(q) || q < 1) q = 1;
+        if (q > stock) q = stock;
+        quantityInput.value = q;
+        return q;
+      }
+
+      // Cập nhật giá + tồn kho khi đổi loại
+      function updateInfo() {
+        const v = getSelectedVariant();
+        priceElement.textContent = v.price.toLocaleString("vi-VN") + "₫";
+        stockElement.textContent = "Còn " + v.stock;
+        quantityInput.max = v.stock;
+        quantityInput.value = 1; // đổi loại thì đặt lại số lượng
+      }
+
+      sizeRadios.forEach((radio) =>
+        radio.addEventListener("change", updateInfo),
+      );
+      quantityInput.addEventListener("change", getQuantity);
+
+      // Tạo đối tượng sản phẩm từ loại đang chọn
+      function buildCartItem() {
+        const v = getSelectedVariant();
+        return {
+          id: PRODUCT_NAME + " - " + v.variant, // khóa duy nhất cho từng loại
+          name: PRODUCT_NAME,
+          variant: v.variant,
+          image: v.image,
+          price: v.price,
+          category: PRODUCT_CATEGORY,
+          stock: v.stock,
+          qty: getQuantity(),
+        };
+      }
+
+      // ===== THÊM VÀO GIỎ HÀNG =====
+      document
+        .querySelector(".add-cart")
+        .addEventListener("click", function () {
+          const item = buildCartItem();
+          const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+          const existing = cart.find((p) => p.id === item.id);
+          const totalQty = (existing ? existing.qty : 0) + item.qty;
+
+          // Kiểm tra tồn kho
+          if (totalQty > item.stock) {
+            alert(
+              `⚠️ Loại "${item.variant}" chỉ còn ${item.stock} sản phẩm (trong giỏ đã có ${existing ? existing.qty : 0}).`,
+            );
+            return;
+          }
+
+          if (existing) {
+            existing.qty = totalQty;
+          } else {
+            cart.push(item);
+          }
+
+          localStorage.setItem("cart", JSON.stringify(cart));
+          alert(
+            `🛒 Đã thêm ${item.qty} sản phẩm loại "${item.variant}" vào giỏ hàng!`,
+          );
+        });
+
+      // ===== MUA NGAY =====
+      document.querySelector(".buy-now").addEventListener("click", function () {
+        localStorage.setItem("checkoutCart", JSON.stringify([buildCartItem()]));
+        window.location.href = "thanhtoan.html";
+      });
+
+      // Khởi tạo ban đầu
+      updateInfo();
+    </script>
+  </body>
+</html>

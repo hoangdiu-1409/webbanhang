@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shop</title>
+
+    <!-- CSS giao diện chính của m -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- CSS phần chi tiết sản phẩm -->
+    <link rel="stylesheet" href="product-detail.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <div class="logo">SKINSHOP</div>
+
+      <div class="search">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Tìm sản phẩm..."
+          autocomplete="off"
+        />
+        <div id="suggestions" class="suggestions"></div>
+      </div>
+
+      <div class="header-right">
+        <div id="accountArea">
+          <a onclick="window.location.href = 'dndk.html'">Đăng nhập</a>
+        </div>
+        <div onclick="window.location.href = 'giohang.html'">🛒</div>
+      </div>
+    </div>
+    <!-- BANNER -->
+    <div class="banner">
+      <img src="/img/banner.png" alt="Banner" />
+    </div>
+
+    <div class="container">
+      <!-- DANH MỤC -->
+      <div class="sidebar">
+        <h3>Danh mục</h3>
+
+        <div class="category">Tất cả</div>
+        <div class="category">Kem dưỡng ẩm</div>
+        <div class="category">Kem chống nắng</div>
+        <div class="category">Sữa rửa mặt</div>
+        <div class="category">Phấn phủ</div>
+        <div class="category">Tẩy trang</div>
+        <div class="category">Son</div>
+        <div class="category">Kem nền</div>
+      </div>
+
+      <div class="products" data-category="Tất cả">
+        <!--kem dưỡng ẩm -->
+        <div
+          class="product"
+          data-category="Kem dưỡng ẩm"
+          data-name="Kem Dưỡng Ẩm Phục Hồi Embryolisse Lait Creme Concentre 15ml"
+          data-image="/img/kemduongam.webp"
+          data-price="310.000đ - 870.000đ"
+          onclick="window.location.href = 'kda2.html'"
+        >
+          <img src="/img/kemduongam.webp" alt="Kem dưỡng ẩm" />
+
+          <h4>Kem Dưỡng Ẩm Phục Hồi Embryolisse Lait Creme Concentre 15ml</h4>
+          <p class="price">310.000đ - 870.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Kem dưỡng ẩm"
+          data-name="Kem Dưỡng Ẩm Torriden 50ml"
+          data-image="/img/duongamtorriden.webp"
+          data-price="285.000đ"
+          onclick="window.location.href = 'kda1.html'"
+        >
+          <img src="/img/duongamtorriden.webp" alt="Torriden" />
+          <h4>Kem Dưỡng Ẩm Torriden 50ml</h4>
+          <p class="price">285.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Kem dưỡng ẩm"
+          data-name="Kem Dưỡng Ẩm Beyond Angel Aqua 150ml"
+          data-image="/img/duongambeyond.webp"
+          data-price="231.999đ"
+          onclick="window.location.href = 'kda3.html'"
+        >
+          <img src="/img/duongambeyond.webp" alt="Beyond" />
+          <h4>
+            Kem Dưỡng Ẩm Thuần Chay Làm Dịu Da Beyond Angel Aqua Moisture Cream
+          </h4>
+          <p class="price">231.999đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Kem dưỡng ẩm"
+          data-name="Thạch hoa hồng dưỡng ẩm cocoon 30ml"
+          data-image="/img/duongamthachhoacocoon.webp"
+          data-price="285.000đ"
+          onclick="window.location.href = 'kda4.html'"
+        >
+          <img src="/img/duongamthachhoacocoon.webp" alt="Cocoon" />
+          <h4>Thạch hoa hồng dưỡng ẩm cocoon 30ml</h4>
+          <p class="price">285.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Kem dưỡng ẩm"
+          data-name="Kem Dưỡng Ẩm Vitamin E Redwin 300g Giúp Dưỡng Ẩm Và Chống Lão Hóa Da"
+          data-image="/img/duongamvitamine.webp"
+          data-price="215.000đ"
+          onclick="window.location.href = 'kda5.html'"
+        >
+          <img src="/img/duongamvitamine.webp" alt="Vitamin E Redwin" />
+          <h4>
+            Kem Dưỡng Ẩm Vitamin E Redwin 300g Giúp Dưỡng Ẩm Và Chống Lão Hóa Da
+          </h4>
+          <p class="price">215.000đ</p>
+        </div>
+        <!-- Kem chống nắng -->
+        <div
+          class="product"
+          data-category="Kem chống nắng"
+          data-name="Kem chống nắng Anessa Perfect UV Sunscreen Skincare Milk SPF 50+ PA++++ 60ml"
+          data-image="/img/kemchongnang.webp"
+          data-price="497.000đ"
+          onclick="window.location.href = 'kcn1.html'"
+        >
+          <img
+            src="/img/kemchongnang.webp"
+            alt="Kem chống nắng Anessa Perfect UV Sunscreen Skincare Milk SPF 50+ PA++++ 60ml"
+          />
+          <h4>
+            Kem chống nắng Anessa Perfect UV Sunscreen Skincare Milk SPF 50+
+            PA++++ 60ml
+          </h4>
+          <p class="price">497.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Kem chống nắng"
+          data-name="Kem chống nắng dưỡng trắng, kiềm dầu dùng mỗi ngày dạng sữa Sunplay Skin Aqua Clear White Eco Việt Nam SPF50, PA++++ 25g"
+          data-image="/img/skinaqua.webp"
+          data-price="166.600đ"
+          onclick="window.location.href = 'kcn2.html'"
+        >
+          >
+          <img src="/img/skinaqua.webp" alt="Sunplay Skin Aqua" />
+
+          <h4>
+            Kem chống nắng dạng sữa Sunplay Skin Aqua Clear White Eco Việt Nam
+            SPF50
+          </h4>
+          <p class="price">166.600đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Kem chống nắng"
+          data-name="Kem Chống Nắng Dermablock SPF50+ PA++++ Nâng Tone, Bảo Vệ Da Toàn Diện 35ml"
+          data-image="/img/dermablock.webp"
+          data-price="170.150đ"
+          onclick="window.location.href = 'kcn3.html'"
+        >
+          >
+          <img src="/img/dermablock.webp" alt="Kem Chống Nắng Dermablock" />
+          <h4>Kem Chống Nắng Dermablock SPF50+ PA++++ 35ml</h4>
+          <p class="price">170.150đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Kem chống nắng"
+          data-name="Kem Chống Nắng Beplain Kiềm Dầu, Nâng Tông, Cấp Ẩm 50ml Sunscreen SPF50+ PA++++"
+          data-image="/img/beplain.webp"
+          data-price="297.000đ"
+          onclick="window.location.href = 'kcn4.html'"
+        >
+          <img src="/img/beplain.webp" alt="Kem Chống Nắng Beplain" />
+          <h4>Kem Chống Nắng Beplain Sunscreen SPF50+ PA++++</h4>
+          <p class="price">297.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Kem chống nắng"
+          data-name="Kem chống nắng nâng tông Caryophy 50ml (Caryophy Smart Tone - Up Suncreen)"
+          data-image="/img/caryophy.webp"
+          data-price="245.000đ"
+          onclick="window.location.href = 'kcn5.html'"
+        >
+          <img src="/img/caryophy.webp" alt="Kem chống nắng Caryophy" />
+          <h4>Kem chống nắng nâng tông Caryophy 50ml</h4>
+          <p class="price">245.000đ</p>
+        </div>
+
+        <!-- Sữa rửa mặt -->
+        <div
+          class="product"
+          data-category="Sữa rửa mặt"
+          data-name="Sữa Rửa Mặt Tạo Bọt La Roche Posay Effaclar Foarming Gel chai 400ml"
+          data-image="/img/suaruamat.jpg"
+          data-price="320.000đ"
+          onclick="window.location.href = 'srm1.html'"
+        >
+          <img src="/img/suaruamat.jpg" alt="La Roche Posay Effaclar" />
+          <h4>
+            Sữa Rửa Mặt Tạo Bọt La Roche Posay Effaclar Foarming Gel chai 400ml
+          </h4>
+          <p class="price">320.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Sữa rửa mặt"
+          data-name="Sữa Rửa Mặt Compliment No Problem ngăn ngừa mụn sạch sâu 200ml"
+          data-image="/img/srmcom.webp"
+          data-price="150.000đ"
+          onclick="window.location.href = 'srm2.html'"
+        >
+          <img src="/img/srmcom.webp" alt="Compliment No Problem" />
+          <h4>
+            Sữa Rửa Mặt Compliment No Problem ngăn ngừa mụn sạch sâu 200ml
+          </h4>
+          <p class="price">150.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Sữa rửa mặt"
+          data-name="Sữa rửa mặt làm sạch da Caryophy 150ml"
+          data-image="/img/srmcary.webp"
+          data-price="250.000đ"
+          onclick="window.location.href = 'srm3.html'"
+        >
+          <img src="/img/srmcary.webp" alt="Sữa rửa mặt Caryophy" />
+
+          <h4>Sữa rửa mặt làm sạch da Caryophy 150ml</h4>
+
+          <p class="price">250.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Sữa rửa mặt"
+          data-name="Sữa rửa mặt Cerave 236ml"
+          data-image="/img/srmce.webp"
+          data-price="280.000đ"
+          onclick="window.location.href = 'srm4.html'"
+        >
+          <img src="/img/srmce.webp" alt="Sữa rửa mặt Cerave" />
+
+          <h4>Sữa rửa mặt Cerave 236ml</h4>
+          <p class="price">280.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Sữa rửa mặt"
+          data-name="Sữa Rửa Mặt Dạng Gel Dành Cho Da Dầu Mụn SVR Sebiaclear Gel Moussant 400ml"
+          data-image="/img/srmsvr.webp"
+          data-price="350.000đ"
+          onclick="window.location.href = 'srm5.html'"
+        >
+          <img src="/img/srmsvr.webp" alt="SVR Sebiaclear" />
+
+          <h4>
+            Sữa Rửa Mặt Dạng Gel Dành Cho Da Dầu Mụn SVR Sebiaclear Gel Moussant
+            400ml
+          </h4>
+
+          <p class="price">350.000đ</p>
+        </div>
+        <!--phấn phủ-->
+        <div
+          class="product"
+          data-category="Phấn phủ"
+          data-name="Phấn Phủ Nén kiềm dầu Carslan 24h Phấn Phủ trang điểm Lâu Trôi Kiềm Dầu 8g Carslan Việt Nam"
+          data-image="/img/ppcarslan.webp"
+          data-price="220.000đ"
+          onclick="window.location.href = 'pp1.html'"
+        >
+          <img src="/img/ppcarslan.webp" alt="Phấn phủ Carslan" />
+
+          <h4>Phấn Phủ Nén kiềm dầu Carslan</h4>
+
+          <p class="price">220.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Phấn phủ"
+          data-name="Phấn Phủ Kiềm Dầu Mịn Lì 16H, Che Phủ, Chống Nắng SPF32 PA+++ Maybelline New York Fit Me Compact 6g"
+          data-image="/img/ppmay.webp"
+          data-price="180.000đ"
+          onclick="window.location.href = 'pp2.html'"
+        >
+          <img src="/img/ppmay.webp" alt="Maybelline Fit Me" />
+
+          <h4>Phấn Phủ Maybelline New York Fit Me Compact 6g</h4>
+
+          <p class="price">180.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Phấn phủ"
+          data-name="ARTMISS Phấn phủ bột trong suốt Transparent Matte Powder 30g"
+          data-image="/img/ppartmiss.webp"
+          data-price="160.000đ"
+          onclick="window.location.href = 'pp3.html'"
+        >
+          <img src="/img/ppartmiss.webp" alt="ARTMISS Phấn phủ" />
+
+          <h4>ARTMISS Phấn phủ bột trong suốt Transparent Matte Powder 30g</h4>
+
+          <p class="price">160.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Phấn phủ"
+          data-name="Phấn Phủ Nén MENOW Rabbit Compact Powder Mỏng Nhẹ Kiềm Dầu Chống Nước 8.5g - Marie Japan"
+          data-image="/img/ppmeow.webp"
+          data-price="120.000đ"
+          onclick="window.location.href = 'pp4.html'"
+        >
+          <img src="/img/ppmeow.webp" alt="MENOW Rabbit Compact Powder" />
+
+          <h4>
+            Phấn Phủ Nén MENOW Rabbit Compact Powder Mỏng Nhẹ Kiềm Dầu Chống
+            Nước 8.5g - Marie Japan
+          </h4>
+
+          <p class="price">120.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Phấn phủ"
+          data-name="Phấn Phủ Nén Zeesea 8g Kiềm Dầu 8 Giờ, Chống Nước, Bền Màu Lâu Trôi"
+          data-image="/img/ppzee.webp"
+          data-price="200.000đ"
+          onclick="window.location.href = 'pp5.html'"
+        >
+          <img src="/img/ppzee.webp" alt="Phấn phủ Zeesea" />
+
+          <h4>Phấn Phủ Nén Zeesea</h4>
+
+          <p class="price">200.000đ</p>
+        </div>
+        <!-- Tẩy trang -->
+        <div
+          class="product"
+          data-category="Tẩy trang"
+          data-name="Tẩy trang Bioderma Sensibio H2O 500ml"
+          data-image="/img/taytrangbio.webp"
+          data-price="350.000đ"
+          onclick="window.location.href = 'tt1.html'"
+        >
+          <img src="/img/taytrangbio.webp" alt="Tẩy trang Bioderma" />
+
+          <h4>Tẩy trang Bioderma Sensibio H2O 500ml</h4>
+
+          <p class="price">350.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Tẩy trang"
+          data-name="Nước Tẩy Trang JMsolution Cleansing Water 500ml"
+          data-image="/img/ttjm.webp"
+          data-price="220.000đ"
+          onclick="window.location.href = 'tt2.html'"
+        >
+          <img src="/img/ttjm.webp" alt="Nước tẩy trang JMsolution" />
+
+          <h4>Nước Tẩy Trang JMsolution Cleansing Water 500ml</h4>
+
+          <p class="price">220.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Tẩy trang"
+          data-name="DRCEUTICS Nước Tẩy Trang Dịu Nhẹ Ultra-mild Olive Cleansing Water Phù Hợp Mọi Loại Da 500ml"
+          data-image="/img/ttdr.webp"
+          data-price="280.000đ"
+          onclick="window.location.href = 'tt3.html'"
+        >
+          <img src="/img/ttdr.webp" alt="DRCEUTICS Cleansing Water" />
+
+          <h4>DRCEUTICS Nước Tẩy Trang Dịu Nhẹ</h4>
+
+          <p class="price">280.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Tẩy trang"
+          data-name="Nước tẩy trang L’Oreal Micellar Water 3in1 làm sạch sâu, tẩy trang dịu nhẹ, cấp ẩm mềm mịn da"
+          data-image="/img/ttlo.webp"
+          data-price="190.000đ"
+          onclick="window.location.href = 'tt4.html'"
+        >
+          <img src="/img/ttlo.webp" alt="Nước tẩy trang L'Oreal" />
+
+          <h4>Nước tẩy trang L’Oreal Micellar Water 3in1</h4>
+
+          <p class="price">190.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Tẩy trang"
+          data-name="Nước Tẩy Trang làm sạch sâu dịu nhẹ cho mọi loại da - Garnier Micellar Cleansing Water"
+          data-image="/img/ttg.webp"
+          data-price="150.000đ"
+          onclick="window.location.href = 'tt5.html'"
+        >
+          <img src="/img/ttg.webp" alt="Nước tẩy trang Garnier" />
+
+          <h4>Nước Tẩy Trang Garnier Micellar Cleansing Water</h4>
+
+          <p class="price">160.000đ</p>
+        </div>
+        <!-- Son -->
+        <div
+          class="product"
+          data-category="Son"
+          data-name="Son Romand Juicy Lasting Tint Giữ Màu Lâu Không Lem 5.5g"
+          data-image="/img/sonrm.webp"
+          data-price="150.000đ"
+          onclick="window.location.href = 'son1.html'"
+        >
+          <img src="/img/sonrm.webp" alt="Son Romand Juicy Lasting Tint" />
+
+          <h4>Son Romand Juicy Lasting Tint Giữ Màu Lâu Không Lem 5.5g</h4>
+
+          <p class="price">150.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Son"
+          data-name="Son Tint Bóng Merzy Dạng Thạch"
+          data-image="/img/sonme.webp"
+          data-price="130.000đ"
+          onclick="window.location.href = 'son2.html'"
+        >
+          <img src="/img/sonme.webp" alt="Son Tint Bóng Merzy" />
+
+          <h4>Son Tint Bóng Merzy Dạng Thạch</h4>
+
+          <p class="price">130.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Son"
+          data-name="Son Tint 3CE Blur Water Tint"
+          data-image="/img/son3ce.webp"
+          data-price="220.000đ"
+          onclick="window.location.href = 'son3.html'"
+        >
+          <img src="/img/son3ce.webp" alt="Son Tint 3CE Blur Water Tint" />
+
+          <h4>Son Tint 3CE Blur Water Tint</h4>
+
+          <p class="price">220.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Son"
+          data-name="Son Bóng Maybelline Lifter Gloss 5.4ML"
+          data-image="/img/sonmay.webp"
+          data-price="180.000đ"
+          onclick="window.location.href = 'son4.html'"
+        >
+          <img src="/img/sonmay.webp" alt="Son Bóng Maybelline Lifter Gloss" />
+
+          <h4>Son Bóng Maybelline Lifter Gloss 5.4ML</h4>
+
+          <p class="price">180.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Son"
+          data-name="Son Dưỡng Di.or Addict Lip Maximizer"
+          data-image="/img/sonduongdior.png"
+          data-price="950.000đ"
+          onclick="window.location.href = 'son5.html'"
+        >
+          <img
+            src="/img/sonduongdior.png"
+            alt="Son Dưỡng Dior Addict Lip Maximizer"
+          />
+
+          <h4>Son Dưỡng Di.or Addict Lip Maximizer</h4>
+
+          <p class="price">950.000đ</p>
+        </div>
+        <!-- Kem nền -->
+        <div
+          class="product"
+          data-category="Kem nền"
+          data-name="Kem Nền Make Up For Ever Hydra Glow"
+          data-image="/img/nenmak.webp"
+          data-price="950.000đ"
+          onclick="window.location.href = 'kn1.html'"
+        >
+          <img
+            src="/img/nenmak.webp"
+            alt="Kem Nền Make Up For Ever Hydra Glow"
+          />
+
+          <h4>Kem Nền Make Up For Ever Hydra Glow</h4>
+
+          <p class="price">950.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Kem nền"
+          data-name="Maybelline Fit Me/Super Stay Up To 30H Lumi-Matte"
+          data-image="/img/nenmay.webp"
+          data-price="220.000đ"
+          onclick="window.location.href = 'kn2.html'"
+        >
+          <img src="/img/nenmay.webp" alt="Maybelline Fit Me Super Stay" />
+
+          <h4>Maybelline Fit Me/Super Stay Up To 30H Lumi-Matte</h4>
+
+          <p class="price">220.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Kem nền"
+          data-name="Nền UODO"
+          data-image="/img/nenuodo.webp"
+          data-price="280.000đ"
+          onclick="window.location.href = 'kn3.html'"
+        >
+          <img src="/img/nenuodo.webp" alt="Nền UODO" />
+
+          <h4>Nền UODO</h4>
+
+          <p class="price">280.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Kem nền"
+          data-name="Kem Nền Mistine"
+          data-image="/img/nenmiss.webp"
+          data-price="180.000đ"
+          onclick="window.location.href = 'kn4.html'"
+        >
+          <img src="/img/nenmiss.webp" alt="Kem Nền Mistine" />
+
+          <h4>Kem Nền Mistine</h4>
+
+          <p class="price">180.000đ</p>
+        </div>
+
+        <div
+          class="product"
+          data-category="Kem nền"
+          data-name="Kem Nền Catrice HD Liquid Coverage Foundation 24h"
+          data-image="/img/nencatr.webp"
+          data-price="250.000đ"
+          onclick="window.location.href = 'kn5.html'"
+        >
+          <img
+            src="/img/nencatr.webp"
+            alt="Kem Nền Catrice HD Liquid Coverage Foundation"
+          />
+
+          <h4>Kem Nền Catrice HD Liquid Coverage Foundation 24h</h4>
+          <p class="price">250.000đ</p>
+        </div>
+        <div class="no-result" id="noResult">
+          Không tìm thấy sản phẩm phù hợp
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>TRANG THÔNG TIN ĐIỆN TỬ</h3>
+          <p>Địa chỉ: 105, An Khánh Hà Nội, Việt Nam</p>
+          <p>Điện thoại: 0914.096.096</p>
+          <p>Email: skinshop@gmail.com</p>
+          <p>
+            Website:
+            <a href="https://skinshop.com.vn" target="_blank"> skinshop </a
+            >.com.vn
+          </p>
+        </div>
+      </div>
+      <!-- CHAT -->
+      <div class="chat-bubble" onclick="openChat()">💬</div>
+      <div class="chat-box" id="chatBox">
+        <div class="chat-header">Chat</div>
+        <div class="chat-body" id="chatBody"></div>
+        <div class="chat-input">
+          <input id="chatInput" placeholder="Nhập tin nhắn..." />
+          <button onclick="sendMessage()">Gửi</button>
+        </div>
+      </div>
+    </footer>
+    <!-- JS -->
+    <script src="script.js"></script>
+    <script>
+      function openChat() {
+        window.location.href = "chat.html";
+      }
+
+      function hienThiTaiKhoan() {
+        const accountArea = document.getElementById("accountArea");
+        const isLoggedIn = localStorage.getItem("isLoggedIn");
+        const currentUser = localStorage.getItem("currentUser");
+
+        if (accountArea && isLoggedIn === "true" && currentUser) {
+          accountArea.innerHTML = `
+        <span>👤 ${currentUser}</span>
+        <a href="#" onclick="dangXuat(); return false;">Đăng xuất</a>
+      `;
+        }
+      }
+
+      function dangXuat() {
+        localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("currentUser");
+        location.reload();
+      }
+
+      hienThiTaiKhoan();
+
+      // =====================================================
+      // TÌM KIẾM + LỌC SẢN PHẨM
+      // =====================================================
+
+      // Bỏ dấu + chữ thường: gõ "tay trang" vẫn ra "Tẩy trang"
+      function normalize(str) {
+        return str
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replace(/đ/g, "d");
+      }
+
+      // Lấy danh sách sản phẩm từ chính các thẻ .product trong trang
+      const PRODUCTS = Array.from(document.querySelectorAll(".product")).map(
+        (card) => {
+          const match = (card.getAttribute("onclick") || "").match(/'([^']+)'/);
+          const title = card.querySelector("h4").textContent.trim();
+          return {
+            el: card,
+            name: title,
+            category: card.dataset.category,
+            price: card.querySelector(".price").textContent.trim(),
+            image: card.dataset.image,
+            url: match ? match[1] : "#",
+            searchText: normalize(
+              card.dataset.name + " " + title + " " + card.dataset.category,
+            ),
+          };
+        },
+      );
+
+      const searchInput = document.getElementById("searchInput");
+      const suggestionBox = document.getElementById("suggestions");
+      const noResult = document.getElementById("noResult");
+      const categoryEls = document.querySelectorAll(".category");
+
+      let currentCategory = "Tất cả";
+      let currentKeyword = "";
+      let activeIndex = -1;
+      let currentResults = [];
+
+      // ----- Lọc danh sách sản phẩm trên trang -----
+      function applyFilter() {
+        const k = normalize(currentKeyword.trim());
+        let shown = 0;
+
+        PRODUCTS.forEach((p) => {
+          const okCategory =
+            currentCategory === "Tất cả" || p.category === currentCategory;
+          const okKeyword = !k || p.searchText.includes(k);
+          const show = okCategory && okKeyword;
+          p.el.style.display = show ? "" : "none";
+          if (show) shown++;
+        });
+
+        noResult.style.display = shown === 0 ? "block" : "none";
+      }
+
+      function setCategory(name) {
+        currentCategory = name;
+        categoryEls.forEach((c) =>
+          c.classList.toggle("active", c.textContent.trim() === name),
+        );
+        applyFilter();
+      }
+
+      categoryEls.forEach((cat) => {
+        cat.addEventListener("click", () =>
+          setCategory(cat.textContent.trim()),
+        );
+      });
+      setCategory("Tất cả");
+
+      // ----- Gợi ý khi gõ -----
+      function highlight(text, keyword) {
+        const idx = normalize(text).indexOf(normalize(keyword));
+        if (idx === -1) return text;
+        const end = idx + keyword.length;
+        return (
+          text.slice(0, idx) +
+          "<mark>" +
+          text.slice(idx, end) +
+          "</mark>" +
+          text.slice(end)
+        );
+      }
+
+      function renderSuggestions() {
+        const keyword = searchInput.value.trim();
+        const k = normalize(keyword);
+        activeIndex = -1;
+
+        if (!k) {
+          suggestionBox.style.display = "none";
+          currentResults = [];
+          return;
+        }
+
+        currentResults = PRODUCTS.filter((p) => p.searchText.includes(k)).slice(
+          0,
+          6,
+        );
+
+        if (currentResults.length === 0) {
+          suggestionBox.innerHTML =
+            '<div class="empty">Không tìm thấy sản phẩm phù hợp</div>';
+        } else {
+          suggestionBox.innerHTML = currentResults
+            .map(
+              (p) => `
+          <a href="${p.url}">
+            <img src="${p.image}" alt="" />
+            <div>
+              <div class="s-name">${highlight(p.name, keyword)}</div>
+              <div class="s-meta">${p.category}</div>
+              <div class="s-price">${p.price}</div>
+            </div>
+          </a>`,
+            )
+            .join("");
+        }
+        suggestionBox.style.display = "block";
+      }
+
+      function setActive(index) {
+        const items = suggestionBox.querySelectorAll("a");
+        items.forEach((el) => el.classList.remove("active"));
+        if (items[index]) {
+          items[index].classList.add("active");
+          items[index].scrollIntoView({ block: "nearest" });
+        }
+      }
+
+      searchInput.addEventListener("input", () => {
+        renderSuggestions();
+        // Xóa hết chữ thì trả lại danh sách đầy đủ
+        if (searchInput.value.trim() === "" && currentKeyword !== "") {
+          currentKeyword = "";
+          applyFilter();
+        }
+      });
+      searchInput.addEventListener("focus", renderSuggestions);
+
+      searchInput.addEventListener("keydown", (e) => {
+        const count = currentResults.length;
+
+        if (e.key === "ArrowDown" && count) {
+          e.preventDefault();
+          activeIndex = (activeIndex + 1) % count;
+          setActive(activeIndex);
+        } else if (e.key === "ArrowUp" && count) {
+          e.preventDefault();
+          activeIndex = (activeIndex - 1 + count) % count;
+          setActive(activeIndex);
+        } else if (e.key === "Enter") {
+          e.preventDefault();
+          if (activeIndex >= 0 && currentResults[activeIndex]) {
+            // Đang chọn một gợi ý -> mở sản phẩm đó
+            window.location.href = currentResults[activeIndex].url;
+          } else {
+            // Không chọn gợi ý -> lọc danh sách theo từ khóa, tìm trên mọi danh mục
+            currentKeyword = searchInput.value;
+            suggestionBox.style.display = "none";
+            setCategory("Tất cả");
+            document
+              .querySelector(".products")
+              .scrollIntoView({ behavior: "smooth" });
+          }
+        } else if (e.key === "Escape") {
+          suggestionBox.style.display = "none";
+        }
+      });
+
+      // Bấm ra ngoài thì đóng gợi ý
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest(".search")) suggestionBox.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

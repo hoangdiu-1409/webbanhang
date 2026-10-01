@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Phấn phủ Menow</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        border-top: 40px solid #ff4d6d;
+        border-bottom: 40px solid #ff4d6d;
+      }
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .product-img { flex: 1; }
+      .product-img img { width: 100%; border-radius: 8px; }
+      .product-info { flex: 2; }
+      .title { font-size: 20px; font-weight: bold; margin-bottom: 10px; }
+      .rating { color: #f39c12; margin-bottom: 10px; }
+      .price { font-size: 24px; color: #e74c3c; margin-bottom: 5px; }
+      .old-price { text-decoration: line-through; color: #888; margin-bottom: 10px; }
+      .flash-sale {
+        background: #ff4757;
+        color: #fff;
+        padding: 8px;
+        border-radius: 4px;
+        margin-bottom: 15px;
+      }
+      .options { margin-bottom: 15px; }
+      .options label { font-weight: bold; margin-right: 10px; }
+      #quantity {
+        width: 50px;
+        padding: 4px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      #stock { margin-left: 8px; color: #27ae60; font-weight: bold; }
+      .buttons button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .add-cart { background: #3498db; color: #fff; }
+      .buy-now { background: #27ae60; color: #fff; }
+      .description, .specs, .usage {
+        max-width: 1000px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        line-height: 1.6;
+      }
+      .description h2, .specs h2, .usage h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #d63384;
+      }
+      .back-home {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        font-size: 24px;
+        text-decoration: none;
+        color: #333;
+        background: #f2f2f2;
+        padding: 5px 10px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      .back-home:hover { background: #3498db; color: #fff; }
+      .cart-link {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        text-decoration: none;
+        background: #ff4d6d;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="product-img">
+        <img src="img/ppmeow.webp" alt="Phấn phủ Menow" />
+      </div>
+
+      <!-- Dữ liệu sản phẩm đặt ở data-*, muốn đổi giá/tồn kho/ảnh chỉ sửa ở đây -->
+      <div
+        class="product-info"
+        id="product"
+        data-name="Phấn phủ Menow Matte Powder"
+        data-category="Phấn phủ"
+        data-price="120000"
+        data-stock="50"
+        data-image="img/ppmeow.webp"
+      >
+        <div class="title">Phấn phủ Menow Matte Powder</div>
+        <div class="rating">⭐ 4.5 (700 đánh giá)</div>
+        <div class="price">120.000₫</div>
+        <div class="old-price">150.000₫ (-20%)</div>
+        <div class="flash-sale">
+          FLASH SALE - Kết thúc sau <span id="countdown"></span>
+        </div>
+
+        <div class="options">
+          <label for="quantity">Số lượng:</label>
+          <input type="number" id="quantity" value="1" min="1" />
+          <span id="stock"></span>
+        </div>
+
+        <div class="buttons">
+          <button class="add-cart">Thêm Vào Giỏ Hàng</button>
+          <button class="buy-now">Mua Ngay</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="description">
+      <h2>Mô tả sản phẩm</h2>
+      <p>
+        Phấn phủ Menow giúp kiềm dầu, tạo lớp nền mịn lì, giá thành hợp lý phù
+        hợp cho học sinh sinh viên.
+      </p>
+    </div>
+
+    <div class="specs">
+      <h2>Chi tiết sản phẩm</h2>
+      <ul>
+        <li>Thương hiệu: Menow</li>
+        <li>Loại da: Da dầu, da hỗn hợp</li>
+        <li>Khối lượng: 10g</li>
+        <li>Xuất xứ: Trung Quốc</li>
+      </ul>
+    </div>
+
+    <div class="usage">
+      <h2>Hướng dẫn sử dụng</h2>
+      <p>
+        Dùng bông phấn hoặc cọ phủ đều lên mặt sau lớp nền để cố định và kiềm
+        dầu.
+      </p>
+    </div>
+
+    <a href="index.html" class="back-home">←</a>
+    <a href="giohang.html" class="cart-link">🛒 Giỏ hàng</a>
+
+    <script>
+      // ===== Đồng hồ Flash Sale =====
+      const countdownElement = document.getElementById("countdown");
+      let timeLeft = 3600;
+
+      function updateCountdown() {
+        const h = Math.floor(timeLeft / 3600);
+        const m = Math.floor((timeLeft % 3600) / 60);
+        const s = timeLeft % 60;
+        countdownElement.textContent = `${h}h ${m}m ${s}s`;
+        if (timeLeft > 0) timeLeft--;
+      }
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+
+      // ===== Thông tin sản phẩm =====
+      const productBox = document.getElementById("product");
+      const quantityInput = document.getElementById("quantity");
+      const stockElement = document.getElementById("stock");
+
+      const PRODUCT = {
+        name: productBox.dataset.name,
+        category: productBox.dataset.category,
+        price: parseInt(productBox.dataset.price),
+        stock: parseInt(productBox.dataset.stock),
+        image: new URL(productBox.dataset.image, document.baseURI).href,
+      };
+
+      stockElement.textContent = "Còn " + PRODUCT.stock;
+      quantityInput.max = PRODUCT.stock;
+
+      // Ép số lượng về khoảng [1, tồn kho]
+      function getQuantity() {
+        let q = parseInt(quantityInput.value);
+        if (isNaN(q) || q < 1) q = 1;
+        if (q > PRODUCT.stock) q = PRODUCT.stock;
+        quantityInput.value = q;
+        return q;
+      }
+      quantityInput.addEventListener("change", getQuantity);
+
+      // Tạo sản phẩm để bỏ vào giỏ (cùng cấu trúc với các trang trước)
+      function buildCartItem() {
+        return {
+          id: PRODUCT.name + " - Mặc định",
+          name: PRODUCT.name,
+          variant: "Mặc định",
+          image: PRODUCT.image,
+          price: PRODUCT.price,
+          category: PRODUCT.category,
+          stock: PRODUCT.stock,
+          qty: getQuantity(),
+        };
+      }
+
+      // ===== THÊM VÀO GIỎ HÀNG =====
+      document.querySelector(".add-cart").addEventListener("click", function () {
+        const item = buildCartItem();
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        const existing = cart.find((p) => p.id === item.id);
+        const totalQty = (existing ? existing.qty : 0) + item.qty;
+
+        if (totalQty > item.stock) {
+          alert(
+            `⚠️ Sản phẩm chỉ còn ${item.stock} (trong giỏ đã có ${existing ? existing.qty : 0}).`
+          );
+          return;
+        }
+
+        if (existing) {
+          existing.qty = totalQty;
+          existing.image = item.image;
+        } else {
+          cart.push(item);
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert(`🛒 Đã thêm ${item.qty} sản phẩm vào giỏ hàng!`);
+      });
+
+      // ===== MUA NGAY =====
+      document.querySelector(".buy-now").addEventListener("click", function () {
+        localStorage.setItem("checkoutCart", JSON.stringify([buildCartItem()]));
+        window.location.href = "thanhtoan.html";
+      });
+    </script>
+  </body>
+</html>

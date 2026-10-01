@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kem Dưỡng Ẩm Vitamin E Redwin 300g Giúp Dưỡng Ẩm Và Chống Lão Hóa Da</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        border-top: 40px solid #ff4d6d;
+        border-bottom: 40px solid #ff4d6d;
+      }
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .product-img { flex: 1; }
+      .product-img img { width: 100%; border-radius: 8px; }
+      .product-info { flex: 2; }
+      .title { font-size: 20px; font-weight: bold; margin-bottom: 10px; }
+      .rating { color: #f39c12; margin-bottom: 10px; }
+      .price { font-size: 24px; color: #e74c3c; margin: 10px 0; }
+      .options { margin-bottom: 15px; }
+      .options label { font-weight: bold; margin-right: 10px; }
+      #quantity {
+        width: 50px;
+        padding: 4px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      #stock { margin-left: 8px; color: #27ae60; font-weight: bold; }
+      .buttons button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .add-cart { background: #3498db; color: #fff; }
+      .buy-now { background: #27ae60; color: #fff; }
+      .description, .specs, .usage {
+        max-width: 1000px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        line-height: 1.6;
+      }
+      .description h2, .specs h2, .usage h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #d63384;
+      }
+      .back-home {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        font-size: 24px;
+        text-decoration: none;
+        color: #333;
+        background: #f2f2f2;
+        padding: 5px 10px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: background 0.3s ease, color 0.3s ease;
+      }
+      .back-home:hover { background: #3498db; color: #fff; }
+      .cart-link {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        text-decoration: none;
+        background: #ff4d6d;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="product-img">
+        <img
+          src="img/duongamvitamine.webp"
+          alt="Kem Dưỡng Ẩm Vitamin E Redwin 300g Giúp Dưỡng Ẩm Và Chống Lão Hóa Da"
+        />
+      </div>
+
+      <!-- Dữ liệu sản phẩm đặt ở data-*, muốn đổi giá/tồn kho/ảnh chỉ sửa ở đây -->
+      <div
+        class="product-info"
+        id="product"
+        data-name="Kem dưỡng ẩm Vitamin E Redwin 300g"
+        data-category="Kem dưỡng"
+        data-price="215000"
+        data-stock="50"
+        data-image="img/duongamvitamine.webp"
+      >
+        <div class="title">
+          [Redwin Chính hãng] Kem dưỡng ẩm Vitamin E 300g Giúp Dưỡng Ẩm Và Chống
+          Lão Hóa Da
+        </div>
+        <div class="rating">⭐ 4.8 (4,3k đánh giá) 20k+ Đã bán</div>
+        <div class="price">215.000₫</div>
+
+        <div class="options">
+          <label for="quantity">Số lượng:</label>
+          <input type="number" id="quantity" value="1" min="1" />
+          <span id="stock"></span>
+        </div>
+
+        <div class="buttons">
+          <button class="add-cart">Thêm Vào Giỏ Hàng</button>
+          <button class="buy-now">Mua Ngay</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="description">
+      <h2>Mô tả sản phẩm</h2>
+      <p>
+        Kem dưỡng ẩm Vitamin E Redwin 300g là sản phẩm chăm sóc da hiệu quả, giúp
+        cung cấp độ ẩm sâu, làm mềm mịn và chống lão hóa da. Với thành phần giàu
+        vitamin E, kem giúp bảo vệ da khỏi tác động của môi trường và ngăn ngừa
+        nếp nhăn, mang lại làn da khỏe mạnh và tươi trẻ.
+      </p>
+    </div>
+
+    <div class="specs">
+      <h2>Chi tiết sản phẩm</h2>
+      <ul>
+        <li>Thương hiệu: Redwin</li>
+        <li>Chăm sóc da: Dưỡng ẩm, Chống lão hóa</li>
+        <li>
+          Thành phần: Vitamin E, Nguồn gốc thiên nhiên, Không chứa paraben,
+          Không chứa silicone, Không chứa sulfate
+        </li>
+        <li>Công thức: Dạng sánh</li>
+        <li>Loại da: Da thường đến da khô</li>
+        <li>Thể tích: 300g</li>
+        <li>Xuất xứ: Úc</li>
+        <li>Hạn sử dụng: 36 tháng</li>
+      </ul>
+    </div>
+
+    <div class="usage">
+      <h2>Hướng dẫn sử dụng</h2>
+      <p>
+        Làm sạch da (mặt và body).<br />
+        Bôi kem lên da, massage nhẹ nhàng cho kem thẩm thấu hết.<br />
+        Dùng được cho cả mặt và body nhé!<br />
+        Lưu ý, bảo quản nơi khô ráo, tránh ánh nắng trực tiếp.<br />
+      </p>
+    </div>
+
+    <a href="index.html" class="back-home">←</a>
+    <a href="giohang.html" class="cart-link">🛒 Giỏ hàng</a>
+
+    <script>
+      const productBox = document.getElementById("product");
+      const quantityInput = document.getElementById("quantity");
+      const stockElement = document.getElementById("stock");
+
+      // Đọc thông tin sản phẩm từ data-* (ảnh đổi sang địa chỉ đầy đủ)
+      const PRODUCT = {
+        name: productBox.dataset.name,
+        category: productBox.dataset.category,
+        price: parseInt(productBox.dataset.price),
+        stock: parseInt(productBox.dataset.stock),
+        image: new URL(productBox.dataset.image, document.baseURI).href,
+      };
+
+      stockElement.textContent = "Còn " + PRODUCT.stock;
+      quantityInput.max = PRODUCT.stock;
+
+      // Ép số lượng về khoảng [1, tồn kho]
+      function getQuantity() {
+        let q = parseInt(quantityInput.value);
+        if (isNaN(q) || q < 1) q = 1;
+        if (q > PRODUCT.stock) q = PRODUCT.stock;
+        quantityInput.value = q;
+        return q;
+      }
+      quantityInput.addEventListener("change", getQuantity);
+
+      // Tạo sản phẩm để bỏ vào giỏ (cùng cấu trúc với các trang trước)
+      function buildCartItem() {
+        return {
+          id: PRODUCT.name + " - Mặc định",
+          name: PRODUCT.name,
+          variant: "Mặc định",
+          image: PRODUCT.image,
+          price: PRODUCT.price,
+          category: PRODUCT.category,
+          stock: PRODUCT.stock,
+          qty: getQuantity(),
+        };
+      }
+
+      // ===== THÊM VÀO GIỎ HÀNG =====
+      document.querySelector(".add-cart").addEventListener("click", function () {
+        const item = buildCartItem();
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        const existing = cart.find((p) => p.id === item.id);
+        const totalQty = (existing ? existing.qty : 0) + item.qty;
+
+        if (totalQty > item.stock) {
+          alert(
+            `⚠️ Sản phẩm chỉ còn ${item.stock} (trong giỏ đã có ${existing ? existing.qty : 0}).`
+          );
+          return;
+        }
+
+        if (existing) {
+          existing.qty = totalQty;
+          existing.image = item.image;
+        } else {
+          cart.push(item);
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert(`🛒 Đã thêm ${item.qty} sản phẩm vào giỏ hàng!`);
+      });
+
+      // ===== MUA NGAY =====
+      document.querySelector(".buy-now").addEventListener("click", function () {
+        localStorage.setItem("checkoutCart", JSON.stringify([buildCartItem()]));
+        window.location.href = "thanhtoan.html";
+      });
+    </script>
+  </body>
+</html>
